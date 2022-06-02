@@ -1,0 +1,45 @@
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    position: sticky;
+}
+
+
+#logo {
+    height: 80px;
+
+}
+
+
+.logocontent {
+    display: flex;
+    justify-content: center;
+    margin-right: 2%;
+}
+
+
+.logocontent div {
+    color: rgb(100, 100, 100);
+    font-size: 0.8rem;
+    margin: 2%;
+}
+
+
+.logocontent div:hover {
+    color: black;
+    font-size: 0.8rem;
+    border-bottom: 1px solid black;
+}
+
+@media only screen and (max-width: 400px) {
+    .nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .title {
+        display: none;
+    }
+}
