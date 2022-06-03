@@ -4,14 +4,19 @@
     justify-content: space-between;
     border-bottom: 1px solid black;
     position: sticky;
+    top: 0;
+    /* z-index: 100; */
+    background-color: black;
 }
 
 
 #logo {
     height: 80px;
+    -webkit-filter: grayscale(1) invert(1);
+    filter: grayscale(1) invert(1);
+
 
 }
-
 
 .logocontent {
     display: flex;
@@ -24,16 +29,59 @@
     color: rgb(100, 100, 100);
     font-size: 0.8rem;
     margin: 2%;
+    color: white;
+    border: 1px solid white;
+    padding: 3px;
+    border-radius: 6px;
 }
-
+.title {
+    color: white;
+    position: absolute;
+    left: 12%;
+}
 
 .logocontent div:hover {
-    color: black;
-    font-size: 0.8rem;
-    border-bottom: 1px solid black;
+    color: #fff;
+    border-radius: none;
 }
 
-@media only screen and (max-width: 400px) {
+
+.logocontent div {
+    border-radius: 4px;
+    background-color: #c26f0a;
+    border: none;
+    color: #fff;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.5s;
+    cursor: pointer;
+  }
+
+.logocontent div{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+
+  .logocontent div:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+  }
+
+  .logocontent div:hover{
+    padding-right: 24px;
+    padding-left:8px;
+  }
+
+  .logocontent div:hover:after {
+    opacity: 1;
+    right: 10px;
+  }
+
+@media only screen and (max-width: 500px) {
     .nav {
         display: flex;
         flex-direction: column;
@@ -42,4 +90,17 @@
     .title {
         display: none;
     }
+    .logocontent div {
+       margin: 5%;
+       padding: 14px;
+    }
+}
+
+
+@media only screen and (max-width: 350px) {
+    .logocontent div {
+        margin: 2%;
+        padding: 8px;
+        font-size: 14px;;
+     }
 }

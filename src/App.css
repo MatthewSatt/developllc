@@ -1,15 +1,16 @@
 .App {
-  text-align: center;
+    text-align: center;
 }
 
-.App img {
-  object-fit: contain;
-  height: 450px;
-  position: static;
+.mission {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.talkwithus {
-  position: absolute;
-  z-index: 1;
-  margin-bottom: 1000px;
+.thegoal {
+    display: flex;
+    width: 80%;
+    font-size: 0.8rem;
 }
