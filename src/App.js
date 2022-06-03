@@ -2,6 +2,7 @@ import "./App.css";
 import Nav from "./components/Nav";
 import TalkWithUs from "./components/TalkWithUs";
 import About from "./components/About";
+import Better from "./components/Better";
 import Footer from "./components/Footer";
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
       <Nav />
       <TalkWithUs />
       <About />
+      <Better />
       <Footer />
     </div>
   );

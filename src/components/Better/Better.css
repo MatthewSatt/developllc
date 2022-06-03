@@ -1,0 +1,12 @@
+#better {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+
+@media only screen and (max-width: 680px) {
+    #better {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
